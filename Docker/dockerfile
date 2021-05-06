@@ -1,0 +1,5 @@
+#yehia nabil mohamed 
+FROM python
+COPY . /Dockerass
+WORKDIR /Dockerass
+CMD python TheCode.py
