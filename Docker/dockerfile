@@ -1,5 +1,7 @@
 #yehia nabil mohamed 
-FROM python
+FROM ubuntu:latest
+RUN apt-get update 
+RUN apt-get install -y python3.9
 COPY . /Dockerass
 WORKDIR /Dockerass
-CMD python TheCode.py
+CMD python3.9 TheCode.py
